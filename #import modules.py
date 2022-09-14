@@ -7,6 +7,7 @@ import seaborn as sns
 #import dataset
 df = pd.read_csv("data/train_data_titanic.csv")
 
+
 df.head()
 df.info()
 plt.figure(figsize=(15,5))
@@ -18,7 +19,4 @@ sns.pairplot(df[['Survived','Fare']], dropna=True)
 #data observing
 df.groupby('Survived').mean()
 #data observing
-df['SibSp'].value_counts()
-df['Parch'].value_counts()
-df['Sex'].value_counts()
-#Handle missing values
+
